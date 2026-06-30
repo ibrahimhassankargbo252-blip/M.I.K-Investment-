@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrator Dashboard | M. I. K Investment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>M. I. K Investment</h1>
+        <p>Administrator dashboard</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html" class="button button-secondary">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-light admin-hero">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Admin tools</p>
+          <h2>Manage staff, services, and website content</h2>
+        </div>
+        <p>This simple administrator dashboard allows editing staff records, updating service entries, and managing business information for the website.</p>
+      </div>
+    </section>
+
+    <section class="section-dark admin-panel">
+      <div class="container admin-grid">
+        <div class="admin-card">
+          <h3>Staff management</h3>
+          <form id="staffForm">
+            <label for="staffName">Full Name</label>
+            <input type="text" id="staffName" placeholder="Staff full name" required />
+            <label for="staffPhone">Phone Number</label>
+            <input type="tel" id="staffPhone" placeholder="Phone number" required />
+            <label for="staffPosition">Position</label>
+            <input type="text" id="staffPosition" placeholder="Position" required />
+            <label for="staffDate">Date Joined</label>
+            <input type="date" id="staffDate" required />
+            <label for="staffStatus">Status</label>
+            <select id="staffStatus" required>
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+            <button type="submit" class="button button-primary">Add Staff</button>
+          </form>
+        </div>
+
+        <div class="admin-card admin-status">
+          <h3>Staff records</h3>
+          <div class="staff-list" id="staffList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>M. I. K Investment</h3>
+        <p>Financial service experts delivering cash-in cash-out, transfers, and subscriptions with speed and trust.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+232 34 884234</p>
+        <p>099 220556</p>
+        <p>ik7743786@gmail.com</p>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <p>#1 Cole Lane, Deep Eye Water, Sierra Leone</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 M. I. K Investment. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
